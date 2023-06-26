@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 50px;
+      background-color: #fff;
+      border-radius: 10px;
+      -webkit-box-shadow: 0px 0px 35px -1px rgba(0,0,0,0.67);
+      -moz-box-shadow: 0px 0px 35px -1px rgba(0,0,0,0.67);
+      box-shadow: 0px 0px 35px -1px rgba(0,0,0,0.67);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="number"],
+    .form-group select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 15px;
+    }
+
+    .form-group select {
+      height: 34px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 8px 16px;
+      font-size: 14px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      border: none;
+      border-radius: 4px;
+      color: #fff;
+      background-color: #4caf50;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Registration Form</h2>
+    <form action="/MarriageEligibilityTestApp/metest" method="get">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="pname" required>
+      </div>
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="page" required>
+      </div>
+      <div class="form-group">
+        <label for="gender">Gender:</label>
+        <select id="gender" name="pgender" required>
+          <option value="">Select Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
